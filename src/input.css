@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+/* Button*/
+
+.btn-primary{
+    position:relative;
+    transition:transform 0.3s ease;
+}
+.btn-primary:hover{
+    transform: translateY(-3px);
+}
+
+/* Card Service section  */
+.card-services{
+    position:relative;
+    transition:transform 0.3s ease;
+
+}
+.card-services:hover{
+    transform:translateY(-5px);
+}
+ /* work images  */
+
+ .grayscale{
+    filter:grayscale(100%);
+    transition:filter 0.3s ease;
+    
+ }
+
+ .grayscale:hover{
+    filter:none;
+ }
+
+ /* Own Carousel  */
+
+ .owl-nav span{
+    display:none ;
+
+ }
+ .owl-nav{
+    margin-top:20px;
+ }
+ .owl-carousel .owl-item img{
+width:50px !important;
+ }
+ .owl-carousel .owl-dots{
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    justify-content: center;
+ }
+ .owl-carousel .owl-dot{
+    background:#313131 !important;
+    width:8px;
+    height:8px;
+    margin:0 8px;
+    border-radius:50%;
+    transition: background-color 0.3s ease;
+
+
+ }
+ .owl-carousel .owl-dot.active{
+background-color:#079211 !important;
+ }
